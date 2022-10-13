@@ -9,3 +9,9 @@ just render the template we want it to render
 in the res.render('home', {layout: false}) the place where you put layout: false is 
 the place where you can afterwords add a the context aka you add files under the name
 of the original placeholders 
+
+or you can user 
+
+res.locals.message = "Hello there"
+making the place holder message in the template you are rendering hold the value of
+'Hello there'
