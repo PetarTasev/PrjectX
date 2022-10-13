@@ -7,13 +7,12 @@ const handlebars = hbr.create({
 
 const app = express()
 
-app.engine('.hbr', handlebars.engine)
+app.engine('.hbs', handlebars.engine)
 app.set('view engine', '.hbs')
 
 app.get('/', (req, res) => {
-    res.render('home', {
-        title: 'Handlebars Demo'
-    })
+    res.render('home', { 
+    layout: false})
 })
 
 app.listen(3000)
