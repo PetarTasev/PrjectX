@@ -1,7 +1,0 @@
-app.get('/', (req, res) => {
-    res.render('home', { 
-    layout: false})
-})
-
-the layout:false makes it so handlebars dont need to to find a template and it can
-just render the template we want it to render
